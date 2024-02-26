@@ -1,0 +1,60 @@
+import javax.swing.*;
+
+public class Ventana1 extends JFrame{
+public JLabel mensaje1;
+public JLabel mensaje2;
+public JLabel mensaje3;
+public JLabel mensaje4;
+public JLabel mensaje5;
+
+public Ventana1(){
+setLayout(null);
+setTitle("AMON AMARTH");
+setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+mensaje1 = new JLabel("There comes");
+mensaje1.setBounds(0,0,80,14);
+add(mensaje1);
+
+mensaje2 = new JLabel("Fenris' twin");
+mensaje2.setBounds(0,196,80,14);
+add(mensaje2);
+
+mensaje3 = new JLabel("Odin´s son");
+mensaje3.setBounds(210,196,80,14);
+add(mensaje3);
+
+mensaje4 = new JLabel("open wide");
+mensaje4.setBounds(220,0,80,14);
+add(mensaje4);
+
+mensaje5 = new JLabel("Jormundgandr twists");
+mensaje5.setBounds(90,100,180,14);
+add(mensaje5);
+}
+
+public static void main(String args[]){
+
+Ventana1 Ven1 = new Ventana1();
+Ventana1 Ven2 = new Ventana1();
+Ventana1 Ven3 = new Ventana1();
+Ventana1 Ven4 = new Ventana1();
+Ventana1 Ven5 = new Ventana1();
+
+
+Ven1.setBounds(1620,0,300,250);
+Ven1.setVisible(true);
+
+Ven2.setBounds(1620,830,300,250);
+Ven2.setVisible(true);
+
+Ven3.setBounds(0,830,300,250);
+Ven3.setVisible(true);
+
+Ven4.setBounds(0,0,300,250);
+Ven4.setVisible(true);
+
+Ven5.setBounds(810,415,300,250);
+Ven5.setVisible(true);
+}
+}
